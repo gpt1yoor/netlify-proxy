@@ -48,7 +48,7 @@ const JS_CONTENT_TYPES = [
 // 特定网站的替换规则 (针对某些站点的特殊处理)
 const SPECIAL_REPLACEMENTS: Record<string, Array<{pattern: RegExp, replacement: Function}>> = {
   // hexo 博客特殊处理 (Vercel 部署)
-  'hexo-gally.vercel.app': [
+  'zh.wikipedia.org': [
     // 替换所有 /css/, /js/, /images/ 等资源路径
     {
       pattern: /(?:src|href|content)=['"](?:\.?\/)?([^"']*\.(css|js|png|jpg|jpeg|gif|svg|webp|ico))["']/gi,
